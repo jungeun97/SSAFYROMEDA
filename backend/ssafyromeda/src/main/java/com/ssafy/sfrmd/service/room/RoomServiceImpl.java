@@ -15,9 +15,9 @@ import java.util.Random;
 @Service("roomService")
 @RequiredArgsConstructor
 public class RoomServiceImpl implements RoomService{
-    RoomRepository roomRepository;
+    private final RoomRepository roomRepository;
 
-    PlayerRepository playerRepository;
+    private final PlayerRepository playerRepository;
 
     HashSet<String> roomCodeSet=new HashSet<>(); // 방코드 set
 
